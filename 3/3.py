@@ -20,8 +20,7 @@ def A():
             epsilon += "1"
 
     file.close()
-    print("gamma %d epsilon %d mul %d" %
-          (int(gamma, 2), int(epsilon, 2), int(gamma, 2) * int(epsilon, 2)))
+    print("A: %d" % (int(gamma, 2) * int(epsilon, 2)))
 
 
 def B():
@@ -82,7 +81,7 @@ def B():
 
     co2 = int(lines[0], 2)
 
-    print("oxy %d co2 %d mul %d" % (oxy, co2, oxy * co2))
+    print("B: %d" % (oxy * co2))
 
     file.close()
 

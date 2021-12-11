@@ -44,7 +44,7 @@ def A():
                     if (i, row, col) in marked:
                         combo += 1
                         if combo == 5:
-                            print("row bingo at draw %d(%d) board %d row %d col %d" % (int(draw), int(draws[draw]), i, row, col))
+                            # print("row bingo at draw %d(%d) board %d row %d col %d" % (int(draw), int(draws[draw]), i, row, col))
                             bingo_draw = int(draws[draw])
                             bingo_board = i
                             bingo = True
@@ -67,7 +67,7 @@ def A():
                     if (i, row, col) in marked:
                         combo += 1
                         if combo == 5:
-                            print("col bingo at draw %d(%d) board %d row %d col %d" % (int(draw), int(draws[draw]), i, row, col))
+                            # print("col bingo at draw %d(%d) board %d row %d col %d" % (int(draw), int(draws[draw]), i, row, col))
                             bingo = True
                             bingo_draw = int(draws[draw])
                             bingo_board = i
@@ -82,7 +82,7 @@ def A():
         if bingo:
             break
     
-    print("bingo board %d bingo draw %d" % (bingo_board, bingo_draw))
+    # print("bingo board %d bingo draw %d" % (bingo_board, bingo_draw))
 
     sum = 0
     mul = 0
@@ -93,7 +93,7 @@ def A():
                 sum += boards[i, row, col]
 
     mul = sum * bingo_draw
-    print("sum %d mul %d" % (sum, mul))
+    print("A: %d" % (mul))
 
 
     file.close()
@@ -192,7 +192,7 @@ def B():
         if bingo:
             break
     
-    print("bingo board %d bingo draw %d" % (bingo_board, bingo_draw))
+    # print("bingo board %d bingo draw %d" % (bingo_board, bingo_draw))
 
     sum = 0
     mul = 0
@@ -202,7 +202,7 @@ def B():
                 sum += boards[i, row, col]
 
     mul = sum * bingo_draw
-    print("sum %d mul %d" % (sum, mul))
+    print("B: %d" % (mul))
 
 
     file.close()

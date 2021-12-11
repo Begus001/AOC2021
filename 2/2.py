@@ -18,7 +18,7 @@ def A():
 
     file.close()
 
-    print("pos %d, depth %d, mul %d" % (pos, depth, pos * depth))
+    print("A: %d" % (pos * depth))
 
 
 def B():
@@ -43,7 +43,7 @@ def B():
 
     file.close()
 
-    print("pos %d, depth %d, mul %d" % (pos, depth, pos * depth))
+    print("B: %d" % (pos * depth))
 
 
 if __name__ == "__main__":

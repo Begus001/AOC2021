@@ -15,7 +15,7 @@ def A():
 
     file.close()
 
-    print(num_increase)
+    print("A: %d" % num_increase)
 
 
 def B():
@@ -36,7 +36,7 @@ def B():
 
     file.close()
 
-    print(num_increase)
+    print("B: %d" % num_increase)
 
 
 if __name__ == "__main__":
