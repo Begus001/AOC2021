@@ -1,4 +1,3 @@
-import os
 def A():
     file = open("4/input", "r")
     lines = file.readlines()
@@ -27,8 +26,10 @@ def A():
     bingo_draw = 0
     bingo_board = 0
 
+    num_boards = int(len(boards) / 25)
+
     for draw in range(len(draws)):
-        for i in range(int(len(boards) / 25)):
+        for i in range(num_boards):
             for row in range(5):
                 for col in range(5):
                     if boards[i, row, col] == int(draws[draw]):
@@ -37,7 +38,7 @@ def A():
         combo = 0
         bingo = False
 
-        for i in range(int(len(boards) / 25)):
+        for i in range(num_boards):
             for row in range(5):
                 for col in range(5):
                     if (i, row, col) in marked:
@@ -60,7 +61,7 @@ def A():
         
         combo = 0
 
-        for i in range(int(len(boards) / 25)):
+        for i in range(num_boards):
             for col in range(5):
                 for row in range(5):
                     if (i, row, col) in marked:
@@ -85,11 +86,11 @@ def A():
 
     sum = 0
     mul = 0
-    for i in range(bingo_board, bingo_board + 1):
-        for row in range(5):
-            for col in range(5):
-                if (i, row, col) not in marked:
-                    sum += boards[i, row, col]
+    
+    for row in range(5):
+        for col in range(5):
+            if (i, row, col) not in marked:
+                sum += boards[i, row, col]
 
     mul = sum * bingo_draw
     print("sum %d mul %d" % (sum, mul))
@@ -130,7 +131,7 @@ def B():
     num_boards = int(len(boards) / 25)
 
     for draw in range(len(draws)):
-        for i in range(int(len(boards) / 25)):
+        for i in range(num_boards):
             for row in range(5):
                 for col in range(5):
                     if boards[i, row, col] == int(draws[draw]):
@@ -139,7 +140,7 @@ def B():
         combo = 0
         bingo = False
 
-        for i in range(int(len(boards) / 25)):
+        for i in range(num_boards):
             for row in range(5):
                 for col in range(5):
                     if (i, row, col) in marked:
@@ -166,7 +167,7 @@ def B():
         
         combo = 0
 
-        for i in range(int(len(boards) / 25)):
+        for i in range(num_boards):
             for col in range(5):
                 for row in range(5):
                     if (i, row, col) in marked:
@@ -195,11 +196,10 @@ def B():
 
     sum = 0
     mul = 0
-    for i in range(bingo_board, bingo_board + 1):
-        for row in range(5):
-            for col in range(5):
-                if (i, row, col) not in marked:
-                    sum += boards[i, row, col]
+    for row in range(5):
+        for col in range(5):
+            if (i, row, col) not in marked:
+                sum += boards[i, row, col]
 
     mul = sum * bingo_draw
     print("sum %d mul %d" % (sum, mul))
