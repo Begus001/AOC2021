@@ -1,5 +1,5 @@
 def A():
-    file = open("7/input", "r")
+    file = open("07/input", "r")
     input = file.readline().split(",")
 
     positions = list()
@@ -19,7 +19,7 @@ def A():
 
 
 def B():
-    file = open("7/input", "r")
+    file = open("07/input", "r")
     input = file.readline().split(",")
 
     positions = list()

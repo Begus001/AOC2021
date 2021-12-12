@@ -1,5 +1,5 @@
 def A():
-    file = open("8/input")
+    file = open("08/input")
     lines = file.readlines()
     output_vals = list()
 
@@ -18,7 +18,7 @@ def A():
 
 
 def B():
-    file = open("8/input")
+    file = open("08/input")
     lines = file.readlines()
     vals = list()
 

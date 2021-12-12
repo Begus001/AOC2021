@@ -1,5 +1,5 @@
 def A():
-    file = open("1/input", "r")
+    file = open("01/input", "r")
     lines = file.readlines()
     last_value = 0
     num_increase = 0
@@ -19,7 +19,7 @@ def A():
 
 
 def B():
-    file = open("1/input", "r")
+    file = open("01/input", "r")
     lines = file.readlines()
     last_value = 0
     num_increase = 0

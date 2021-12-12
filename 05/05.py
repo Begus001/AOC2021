@@ -1,5 +1,5 @@
 def A():
-    file = open("5/input", "r")
+    file = open("05/input", "r")
     lines = file.readlines()
     coordinates = {}
     diagram = {}
@@ -65,7 +65,7 @@ def A():
 
 
 def B():
-    file = open("5/input", "r")
+    file = open("05/input", "r")
     lines = file.readlines()
     coordinates = {}
     diagram = {}

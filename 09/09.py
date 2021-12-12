@@ -1,5 +1,5 @@
 def A():
-    file = open("9/input", "r")
+    file = open("09/input", "r")
     lines = file.readlines()
     hmap = list(list())
     lowpoints = {}
@@ -33,7 +33,7 @@ def A():
 
 
 def B():
-    file = open("9/input", "r")
+    file = open("09/input", "r")
     lines = file.readlines()
     hmap = list(list())
     basins = {}

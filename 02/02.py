@@ -1,5 +1,5 @@
 def A():
-    file = open("2/input", "r")
+    file = open("02/input", "r")
     lines = file.readlines()
     pos = 0
     depth = 0
@@ -22,7 +22,7 @@ def A():
 
 
 def B():
-    file = open("2/input", "r")
+    file = open("02/input", "r")
     lines = file.readlines()
     pos = 0
     depth = 0

@@ -1,5 +1,5 @@
 def A():
-    file = open("4/input", "r")
+    file = open("04/input", "r")
     lines = file.readlines()
 
     draws = lines.pop(0).replace("\n", "").split(",")
@@ -100,7 +100,7 @@ def A():
 
 
 def B():
-    file = open("4/input", "r")
+    file = open("04/input", "r")
     lines = file.readlines()
 
     draws = lines.pop(0).replace("\n", "").split(",")

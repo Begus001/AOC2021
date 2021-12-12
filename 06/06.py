@@ -1,5 +1,5 @@
 def A():
-    file = open("6/input")
+    file = open("06/input")
     init_state_str = file.readline().split(",")
     state = list()
     for str in init_state_str:
@@ -17,7 +17,7 @@ def A():
     file.close()
 
 def B():
-    file = open("6/input")
+    file = open("06/input")
     init_state_str = file.readline().split(",")
     state = list()
     for str in init_state_str:

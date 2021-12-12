@@ -1,5 +1,5 @@
 def A():
-    file = open("3/input", "r")
+    file = open("03/input", "r")
     lines = file.readlines()
     gamma = ""
     epsilon = ""
@@ -24,7 +24,7 @@ def A():
 
 
 def B():
-    file = open("3/input", "r")
+    file = open("03/input", "r")
     lines = file.readlines()
 
     for bit in range(len(lines[0])):
