@@ -9,7 +9,7 @@ def A():
     marked = {}
 
     for i in range(len(lines)):
-        lines[i] = lines[i].removeprefix(" ").replace("  ", " ").split(" ")
+        lines[i] = lines[i].lstrip(" ").replace("  ", " ").split(" ")
 
     new_lines = [i for i in lines if "\n" not in i]
     lines = new_lines
@@ -110,7 +110,7 @@ def B():
     marked = {}
 
     for i in range(len(lines)):
-        lines[i] = lines[i].removeprefix(" ").replace("  ", " ").split(" ")
+        lines[i] = lines[i].lstrip(" ").replace("  ", " ").split(" ")
 
     new_lines = [i for i in lines if "\n" not in i]
     lines = new_lines
